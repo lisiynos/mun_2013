@@ -1,0 +1,34 @@
+\revision{{\input{revision.temp}}[\number\day.\number\month.\number\year\ \daytime]}
+
+% Treat all pictures as MPS (metapost) when using PDFLaTeX tool
+%\ifx\pdftexversion\undefined
+%\else
+%  \DeclareGraphicsRule{*}{eps}{*}{}
+%\fi
+
+\contest
+{Олимпиада Ленинградской области по информатике}
+{Районный тур}
+{ноябрь 2013 года}
+
+\binoppenalty=10000
+\relpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+
+\raggedbottom
+
+%\displayauthorinfootertrue
+\def\newpageafterlegend{\relax}
+\importproblem{abt}
+\newpage
+\importproblem{berg}
+\newpage
+\importproblem{cord}
+\newpage
+\importproblem{dorf}
+\newpage
+\importproblem{erd}
+
+\end{document}

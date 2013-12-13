@@ -1,0 +1,36 @@
+
+RUN 0.9alpha by Kitten Computing
+
+Generic switch format: /<swname>=<value>
+For boolean switches single /<swname> also allowed setting value to be true
+For string switches single /<swname> sets value to be empty
+Here is the list of allowed command line parameters:
+
+/? or /help - displays this help
+/answerextension or /a - change answer file extension
+/checker or /v         - change name of the checking program
+/checkresult or /y     - check the answer whether it is correct or no
+/copytestfiles or /f   - if false - runs only on single test specified by /i
+/compiler or /b        - name and options for solution compiler
+/compilesolution or /q - solution recompilation allowed if source is newer
+/compilealways or /g   - if true and /q enabled - unconditional compile
+/config or @<cfgname>  - the name of configuration file to read
+/exitonfail or /e      - finish testing after first wrong test
+/inputfile or /i       - name of the input file
+/outputfile or /o      - name of the output file
+/resultextension or /r - the name of result extension, if empty - no result
+/score or /c           - specify this if you want to use school scoring system
+/solution or /p        - name of the solution
+/sourceextension or /x - extension of the source file
+/memorylimit or /m     - memory limit for this task (<=512-mb else kb, 0=inf)
+/timelimit or /z       - time limit for this task (<=60-sec else ms, 0=inf)
+/testname or /n        - the name of the single test to run, if empty - run all
+/directory or /d       - directory for tests, answers and checker
+/waitonexit or /w      - wait on exit
+/logfile or /l         - the name of the run.log file, if empty - do not log
+
+The defaults are: /a=a/v=check.exe/y- "/b=dcc32.exe -cc" /w-/q @task.cfg/e-
+                  /i=input.txt/m=0/o=output.txt/r=u/p=solution/x=dpr/z=0/n
+                  /l=run.log/d/w-/f
+
+First five parameters without switches are recognized in order /p /i /o /r /n

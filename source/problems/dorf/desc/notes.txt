@@ -1,0 +1,13 @@
+Author: Ivan Kazmenko
+Idea: Ivan Kazmenko
+Inspiration: задача про перестановки
+Origin: 201311??, Leningrad Region School Olympiad
+Original Name: dorf
+Descriptions: TEX
+I/O: PROBLEMNAME.{in|out}
+ID: 0214
+
+Стиль легенды: для школьников
+Легенда: семьи
+Условие: пояснения к примерам
+Генератор: C++, gentools 0.8.458

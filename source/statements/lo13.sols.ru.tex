@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper,oneside,twocolumn,landscape]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[russian,landscape]{olymp}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{pscyr}
+
+\renewcommand{\rmdefault}{fha}
+\renewcommand{\sfdefault}{fha}
+
+\contest
+{Олимпиада Ленинградской области по информатике}
+{Районный тур}
+{ноябрь 2013 года}
+
+\newcommand{\sols}[3]%
+{
+%\newpage
+%{\Large Краткое условие}
+
+\smallskip
+\input{../../../data/#2_#1/desc/stdesc.tex}
+
+%\bigskip
+%{\Large Тэги:}
+%
+%\verbatiminput{../../../data/#2_#1/desc/tags.tex}
+
+\bigskip
+#3
+{\Large Разбор}
+\smallskip
+
+\input{../../../data/#2_#1/desc/soldesc.tex}
+}
+
+\binoppenalty=10000
+\relpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{document}
+
+\raggedbottom
+
+{\LARGE Задача A: {Неправильный квадрат}}
+
+\sols{abt}{0211}{}
+
+\bigskip
+{\LARGE Задача B: {Секретный язык}}
+
+\sols{berg}{0212}{}
+
+\bigskip
+\newpage
+{\LARGE Задача C: {Три забора}}
+
+\sols{cord}{0213}{}
+
+\bigskip
+{\LARGE Задача D: {Письма мэра}}
+
+\sols{dorf}{0214}{}
+
+\bigskip
+{\LARGE Задача E: {Многодневные часы}}
+
+\sols{erd}{0215}{\newpage}
+
+\bigskip
+
+{\Large Разработчики комплекта задач:}
+
+Иван Казменко (gassafm@gmail.com)
+
+Наталья Гинзбург (naagin@gmail.com)
+
+\end{document}
