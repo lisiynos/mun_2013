@@ -1,0 +1,16 @@
+*.exe
+*.u
+*.bak
+*.log
+*.in
+*.out
+*.dat
+testlogs
+ioilogs
+ioisols
+*.jar
+*.class
+/source/statements/*.aux
+/source/statements/*.dvi
+/source/statements/*.pdf
+/source/statements/*.ps
